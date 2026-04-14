@@ -4,13 +4,16 @@ import Image from "next/image"
 import Link from "next/link"
 import logo from '../../../public/logo.png'
 import { usePathname } from "next/navigation"
+import { IoHomeOutline } from "react-icons/io5"
+import { RiTimeLine } from "react-icons/ri"
+import { GoGraph } from "react-icons/go"
 
 const Navbar = () => {
  const path = usePathname()
     const links =<>
-    <li><Link href='/' className={path === '/' ? 'bg-green-900 rounded-2xl text-white': null}>Home</Link></li>
-    <li><Link href='/Timeline' className={path === '/Timeline' ? 'bg-green-900 rounded-2xl text-white': null}>Timeline</Link></li>
-    <li><Link href='/Static' className={path === '/Static' ? 'bg-green-900 rounded-2xl text-white': null}>Static</Link></li>
+    <li><Link href='/' className={path === '/' ? 'bg-green-900 rounded text-white': null}><IoHomeOutline /> Home</Link></li>
+    <li><Link href='/Timeline' className={path === '/Timeline' ? 'bg-green-900 rounded text-white': null}> <RiTimeLine /> Timeline</Link></li>
+    <li><Link href='/Static' className={path === '/Static' ? 'bg-green-900 rounded text-white': null}><GoGraph /> Static</Link></li>
     </>
   return (
  <>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Rahman",
+    "picture": "/images/av-1.png",
+    "email": "arafat.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met during BBA at university. Used to work on group projects and late-night study sessions together.",
+    "goal": 14,
+    "next_due_date": "2026-03-30"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "/images/av-2.png",
+    "email": "nusrat.jahan@yahoo.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["office", "friend"],
+    "bio": "Colleague from first job. Often shared lunch and discussed career growth and life goals.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 3,
+    "name": "Sabbir Hossain",
+    "picture": "/images/av-3.png",
+    "email": "sabbir.dev@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["developer", "learning buddy"],
+    "bio": "Met through a programming course. We regularly discuss JavaScript problems and project ideas.",
+    "goal": 10,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 4,
+    "name": "Atik Hasan",
+    "picture": "/images/av-4.png",
+    "email": "atikhasan@gmail.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["school", "old friend"],
+    "bio": "School friend from Gazipur. Haven’t met in years but still keep occasional contact.",
+    "goal": 15,
+    "next_due_date": "2026-03-28"
+  },
+  {
+    "id": 5,
+    "name": "Rifat Mahmud",
+    "picture": "/images/av-5.png",
+    "email": "rifat.mahmud@outlook.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["gaming", "online friend"],
+    "bio": "Met through online gaming. We usually talk about tech, games, and freelancing opportunities.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Mariam Chowdhury",
+    "picture": "/images/av-6.png",
+    "email": "mariam.chy@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["family friend"],
+    "bio": "Family friend who has always been supportive. We often discuss personal growth and life decisions.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 7,
+    "name": "Tanvir Hasan",
+    "picture": "/images/av-7.png",
+    "email": "tanvir.hasan@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["freelancer", "mentor"],
+    "bio": "Senior freelancer who guided me in early days of learning web design and client communication.",
+    "goal": 10,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 8,
+    "name": "Farzan Kabir",
+    "picture": "/images/av-8.png",
+    "email": "farzan.kabir@gmail.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["neighbor", "friendly"],
+    "bio": "Neighbor from childhood. We occasionally catch up about family and local events.",
+    "goal": 12,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 9,
+    "name": "Imran Khan",
+    "picture": "/images/av-9.png",
+    "email": "imran.khan.bd@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["gym", "fitness buddy"],
+    "bio": "Workout partner from local gym. Used to motivate each other to stay consistent and healthy.",
+    "goal": 14,
+    "next_due_date": "2026-03-29"
+  },
+  {
+    "id": 10,
+    "name": "Sadia Noor",
+    "picture": "/images/av-10.png",
+    "email": "sadia.noor@gmail.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["book club", "intellectual"],
+    "bio": "Met through a book club. We discuss psychology, philosophy, and self-development topics.",
+    "goal": 10,
+    "next_due_date": "2026-04-19"
+  }
+]
