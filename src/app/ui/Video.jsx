@@ -1,13 +1,18 @@
 'use client'
-import React from 'react'
+import { FriendApi } from '@/context/ContextApi'
+import React, { useContext } from 'react'
 import { IoVideocamOutline } from 'react-icons/io5'
  
-const handleInput = () =>{
-    console.log('Video Calling.....')
-}
-const Video = () => {
+
+const Video = ({friend}) => {
+   const {handleInput} = useContext(FriendApi)
+   const type = {
+    type : "chat",
+    name: friend.name,
+    time: new Date()
+   }
   return (
-            <div onClick={handleInput} className="flex flex-col items-center py-10 shadow cursor-pointer rounded">
+            <div onClick={() =>handleInput(type)} className="flex flex-col items-center py-10 shadow cursor-pointer rounded">
           <IoVideocamOutline className="text-3xl text-green-900" />
           <p>Video Call</p>
         </div>

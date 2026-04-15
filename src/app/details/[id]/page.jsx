@@ -13,7 +13,7 @@ export default async function DetailsPage({ params }) {
 
   const res = await fetch("http://localhost:3000/friends.json");
   const data = await res.json();
-
+   
   const friend = data.find((f) => f.id == id);
 
   return (
@@ -112,11 +112,11 @@ export default async function DetailsPage({ params }) {
 
   
       <div className="grid md:grid-cols-3 gap-4">
-        <Call/>
+        <Call friend={friend}/>
 
-        <Chat/>
+        <Chat friend={friend} />
 
-         <Video/>
+         <Video friend={friend}/>
       </div>
     </div>
   </div>
