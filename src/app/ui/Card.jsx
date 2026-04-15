@@ -10,9 +10,9 @@ export const Card = ({friend}) => {
     <figure>
         <Image src={friend.picture} width={70} height={70} className='rounded-full border-4 border-green-900' alt={friend.name}/>
     </figure>
-    <h2 className="card-title text-3xl">{friend.name}</h2>
+    <h2 className="card-title text-2xl">{friend.name}</h2>
     <p className='text-gray-600 font-bold'>{friend.days_since_contact} day</p>
-    <div className="card-actions justify-end">
+    <div className="card-actions grid grid-cols-2">
         {
             friend.tags.map((tag, i) =>{
           return  <button key={i} className='bg-green-200 rounded-md p-2 ' >{tag}</button>
