@@ -1,3 +1,6 @@
+import Call from "@/app/ui/Call";
+import Chat from "@/app/ui/Chat";
+import Video from "@/app/ui/Video";
 import Image from "next/image";
 import { CiChat1 } from "react-icons/ci";
 import { FaBellSlash, FaPencilAlt } from "react-icons/fa";
@@ -109,20 +112,11 @@ export default async function DetailsPage({ params }) {
 
   
       <div className="grid md:grid-cols-3 gap-4">
-        <div className="flex flex-col items-center py-10 shadow rounded">
-          <IoIosCall className="text-3xl text-green-900" />
-          <p>Call</p>
-        </div>
+        <Call/>
 
-        <div className="flex flex-col items-center py-10 shadow rounded">
-          <CiChat1 className="text-3xl text-green-900" />
-          <p>Chat</p>
-        </div>
+        <Chat/>
 
-        <div className="flex flex-col items-center py-10 shadow rounded">
-          <IoVideocamOutline className="text-3xl text-green-900" />
-          <p>Video Call</p>
-        </div>
+         <Video/>
       </div>
     </div>
   </div>

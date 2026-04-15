@@ -12,7 +12,7 @@ export const Card = ({friend}) => {
     </figure>
     <h2 className="card-title text-2xl">{friend.name}</h2>
     <p className='text-gray-600 font-bold'>{friend.days_since_contact} day</p>
-    <div className="card-actions grid grid-cols-2">
+    <div className="card-actions flex">
         {
             friend.tags.map((tag, i) =>{
           return  <button key={i} className='bg-green-200 rounded-md p-2 ' >{tag}</button>
