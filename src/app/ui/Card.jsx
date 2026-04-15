@@ -1,10 +1,11 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export const Card = ({friend}) => {
   return (
     <div>
-        <div className="card shadow-md">
+       <Link href={`/details/${friend.id}`}> <div  className="card shadow-md space-y-2">
   <div className="card-body items-center text-center">
     <figure>
         <Image src={friend.picture} width={70} height={70} className='rounded-full border-4 border-green-900' alt={friend.name}/>
@@ -19,9 +20,11 @@ export const Card = ({friend}) => {
              
             )
         }
+        
     </div>
+    <button  className={` ${friend.status === 'on-track'? "bg-green-700" : friend.status === 'almost due' ? "bg-amber-400": 'bg-red-400'} text-white rounded-4xl p-2 `} >{friend.status}</button>
   </div>
-</div>
+</div></Link>
     </div>
   )
 }
