@@ -1,8 +1,9 @@
 'use client'
 
+import { FriendApi } from '@/context/ContextApi'
 import React, { useContext, useState } from 'react'
 import { IoIosCall } from 'react-icons/io'
-import { FriendApi } from '../../context/ContextApi'
+
 
 const Call = ({friend}) => {
   

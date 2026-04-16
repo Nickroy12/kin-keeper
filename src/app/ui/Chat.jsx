@@ -1,8 +1,9 @@
 'use client'
 
+import { FriendApi } from '@/context/ContextApi'
 import React, { useContext } from 'react'
 import { CiChat1 } from 'react-icons/ci'
-import { FriendApi } from '../../context/ContextApi'
+
 
 
 const Chat = ({friend}) => {

@@ -5,8 +5,9 @@ import "./globals.css";
 
 import { ToastContainer } from "react-toastify";
 import ContextApi from "../context/ContextApi";
-import { Footer } from "../Components/footer/Footer";
-import Navbar from "../Components/shared/Navbar";
+import Navbar from "@/Components/shared/Navbar";
+import { Footer } from "@/Components/footer/Footer";
+
 
 
 const geistSans = Geist({

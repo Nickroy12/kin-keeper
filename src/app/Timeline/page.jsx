@@ -3,7 +3,8 @@
 import { useContext } from "react"
 
 import TimeCard from "../ui/TimeCard"
-import { FriendApi } from "../../context/ContextApi"
+import { FriendApi } from "@/context/ContextApi"
+
 
 const Timeline = () => {
   const { calls } = useContext(FriendApi)
