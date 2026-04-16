@@ -9,7 +9,7 @@ const Timeline = () => {
 
   if (!calls || calls.length === 0) {
     return (
-      <div className='flex flex-col justify-center items-center h-screen'>
+      <div className='flex flex-col justify-center w-10/12 m-auto items-center shadow h-screen'>
         <h1 className='text-xl font-semibold'>No Call History Found</h1>
         <p className="text-gray-500">Your timeline is empty right now</p>
       </div>

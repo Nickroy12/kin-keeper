@@ -7,7 +7,7 @@ const ContextApi = ({children}) => {
       const [calls , setCalls] = useState([])
   const handleInput = (status) =>{
     setCalls([...calls , status])
-   toast(
+   toast.success(
   status.type === 'call'
     ? `${status.name} is ringing`
     : status.type === 'video'
