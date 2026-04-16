@@ -1,8 +1,9 @@
 "use client";
 
-import { FriendApi } from "@/context/ContextApi";
+
 import { useContext } from "react";
 import {PieChart,Pie,Cell,Tooltip,Legend,ResponsiveContainer,} from "recharts";
+import { FriendApi } from "../../context/ContextApi";
 
 
 const COLORS = ["#00bc7d", "#6EE7D7", "#000"];

@@ -1,8 +1,9 @@
 'use client'
 
 import { useContext } from "react"
-import { FriendApi } from "@/context/ContextApi"
+
 import TimeCard from "../ui/TimeCard"
+import { FriendApi } from "../../context/ContextApi"
 
 const Timeline = () => {
   const { calls } = useContext(FriendApi)

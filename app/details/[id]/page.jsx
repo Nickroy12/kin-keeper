@@ -1,12 +1,14 @@
-import Call from "@/app/ui/Call";
-import Chat from "@/app/ui/Chat";
-import Video from "@/app/ui/Video";
+
+
 import Image from "next/image";
 import { CiChat1 } from "react-icons/ci";
 import { FaBellSlash, FaPencilAlt } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
 import { IoArchive, IoVideocamOutline } from "react-icons/io5";
 import { MdAutoDelete } from "react-icons/md";
+import Call from "../../ui/Call";
+import Chat from "../../ui/Chat";
+import Video from "../../ui/Video";
 
 export async function generateMetadata({ params }) {
   const { id } = await params;

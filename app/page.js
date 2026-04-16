@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { Banner } from "./Home/Banner";
-import { Count } from "./Home/Count";
 import Friend from "./Home/Friend";
+import { Count } from "./Home/Count";
+import { Banner } from "./Home/Banner";
+
 
 
 export default function Home() {

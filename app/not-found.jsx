@@ -1,5 +1,5 @@
 import Image from "next/image"
-import errorPng from '../../public/App-Error.png'
+import errorPng from '../public/App-Error.png'
 import Link from "next/link"
 
  const NotFoundPage = () => {

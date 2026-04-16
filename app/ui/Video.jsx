@@ -1,7 +1,8 @@
 'use client'
-import { FriendApi } from '@/context/ContextApi'
+
 import React, { useContext } from 'react'
 import { IoVideocamOutline } from 'react-icons/io5'
+import { FriendApi } from '../../context/ContextApi'
  
 
 const Video = ({friend}) => {

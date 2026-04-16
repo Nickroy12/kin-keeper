@@ -1,9 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/Components/shared/Navbar";
-import { Footer } from "@/Components/footer/Footer";
-import ContextApi from "@/context/ContextApi";
+
+
+
 import { ToastContainer } from "react-toastify";
+import ContextApi from "../context/ContextApi";
+import { Footer } from "../Components/footer/Footer";
+import Navbar from "../Components/shared/Navbar";
 
 
 const geistSans = Geist({
