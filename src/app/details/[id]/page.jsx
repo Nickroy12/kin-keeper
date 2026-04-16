@@ -14,7 +14,7 @@ import { MdAutoDelete } from "react-icons/md";
 export async function generateMetadata({ params }) {
   const { id } = await params;
 
-const res = await fetch("http://localhost:3000/friends.json", {
+const res = await fetch("https://kin-keeper-orcin.vercel.app/friends.json", {
   cache: "no-store"
 });
   const data = await res.json();
@@ -29,7 +29,7 @@ const res = await fetch("http://localhost:3000/friends.json", {
 export default async function DetailsPage({ params }) {
   const { id } = await params;
 
-const res = await fetch("http://localhost:3000/friends.json", {
+const res = await fetch("https://kin-keeper-orcin.vercel.app/friends.json", {
   cache: "no-store"
 });
   const data = await res.json();
