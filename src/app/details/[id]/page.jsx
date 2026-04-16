@@ -11,7 +11,9 @@ import { MdAutoDelete } from "react-icons/md";
 export async function generateMetadata({ params }) {
   const { id } = await params;
 
-  const res = await fetch("http://localhost:3000/friends.json");
+const res = await fetch("http://localhost:3000/friends.json", {
+  cache: "no-store"
+});
   const data = await res.json();
 
   const friend = data.find((f) => f.id == id);
@@ -24,7 +26,9 @@ export async function generateMetadata({ params }) {
 export default async function DetailsPage({ params }) {
   const { id } = await params;
 
-  const res = await fetch("http://localhost:3000/friends.json");
+const res = await fetch("http://localhost:3000/friends.json", {
+  cache: "no-store"
+});
   const data = await res.json();
    
   const friend = data.find((f) => f.id == id);
