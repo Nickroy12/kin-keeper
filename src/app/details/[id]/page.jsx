@@ -8,6 +8,19 @@ import { IoIosCall } from "react-icons/io";
 import { IoArchive, IoVideocamOutline } from "react-icons/io5";
 import { MdAutoDelete } from "react-icons/md";
 
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+
+  const res = await fetch("http://localhost:3000/friends.json");
+  const data = await res.json();
+
+  const friend = data.find((f) => f.id == id);
+
+  return {
+    title: `${friend.name || "Friend"} - KeenKeeper`,
+  };
+}
+
 export default async function DetailsPage({ params }) {
   const { id } = await params;
 
@@ -15,8 +28,10 @@ export default async function DetailsPage({ params }) {
   const data = await res.json();
    
   const friend = data.find((f) => f.id == id);
+ 
 
   return (
+    
   <div className="w-10/12 m-auto p-4">
     <h1 className="text-4xl font-bold mb-5">Friends Profile</h1>
   <div className="grid md:grid-cols-5 gap-5">

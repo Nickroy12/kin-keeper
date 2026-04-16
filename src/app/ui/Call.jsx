@@ -14,7 +14,7 @@ const Call = ({friend}) => {
   }
 
   return (
-       <div onClick={() =>handleInput(type)} className="flex flex-col items-center py-10 shadow rounded">
+       <div onClick={() =>handleInput(type)} className="flex flex-col cursor-pointer items-center py-10 shadow rounded">
           <IoIosCall className="text-3xl text-green-900" />
           <p>Call</p>
         </div>

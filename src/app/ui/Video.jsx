@@ -7,7 +7,7 @@ import { IoVideocamOutline } from 'react-icons/io5'
 const Video = ({friend}) => {
    const {handleInput} = useContext(FriendApi)
    const type = {
-    type : "chat",
+    type : "video",
     name: friend.name,
     time: new Date()
    }
